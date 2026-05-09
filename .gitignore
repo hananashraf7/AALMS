@@ -1,0 +1,47 @@
+# ── Python ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual Environment ─────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Database ────────────────────────────────────────
+*.db
+*.sqlite3
+
+# ── IDE / Editor ────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS Files ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Node.js / Frontend ─────────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/.env*.local
+
+# ── Logs ────────────────────────────────────────────
+logs/
+*.log
+
+# ── Temporary / Generated ──────────────────────────
+attendance_data/
+known_faces/
+*.task
+
+# ── Environment ─────────────────────────────────────
+.env
+.env.local
