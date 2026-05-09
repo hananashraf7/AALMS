@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Card Panel — soft white with subtle shadow */
+.card-panel {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* Input Fields — light gray background, dark text */
+.form-input {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  color: #1a1a1a;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.form-input::placeholder {
+  color: #9e9e9e;
+}
+
+.form-input:focus {
+  border-color: #bbb;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.04);
+}
+
+.form-input[type="date"],
+.form-input[type="number"],
+.form-input[type="password"] {
+  color: #1a1a1a;
+  color-scheme: light;
+}
+
+textarea.form-input {
+  color: #1a1a1a;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-primary:hover {
+  background-color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Ghost button */
+.btn-ghost {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  color: #666;
+  font-weight: 600;
+  font-size: 0.75rem;
+  transition: all 0.15s ease;
+}
+.btn-ghost:hover {
+  border-color: #ccc;
+  background: #f5f5f5;
+  color: #1a1a1a;
+}
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.625rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+}
+.badge-default {
+  background: #f0f0f0;
+  color: #666;
+}
+.badge-active {
+  background: #1a1a1a;
+  color: #fff;
+}
+.badge-warning {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+/* Tab Styles */
+.tab-item {
+  padding: 0.5rem 1rem;
+  border-radius: 0.625rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: #999;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+.tab-item:hover {
+  color: #666;
+  background: #f5f5f5;
+}
+.tab-active {
+  background: #1a1a1a !important;
+  color: #fff !important;
+}
